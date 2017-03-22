@@ -25,7 +25,6 @@ describe('Toolbar View', () => {
     const toolbar = mount(
       <Toolbar type={'code'} clearOutputs={clearOutputs} />,
     );
-    debugger;
     toolbar.find('.clearOutput').simulate('click');
     expect(clearOutputs).to.have.been.called;
   });
